@@ -11,14 +11,14 @@ export default function App(){
   
   return(
     <div className={ `darkMode ${isDark ? 'darkMode' : 'lightMode'}`}>
-      <button className="buton" onClick={()=> setDark(!isDark)}>{isDark ? 'Dark':'Light' } Mode</button>
+      <button className="buton" onClick={()=> setDark(!isDark)}>{isDark ? 'Light':'Dark' } Mode</button>
 
       <h1 className="heading_style">
       Hello! Welcome 😄 To Counter Page📄
      </h1>
       <button onClick={()=>setCount(++count)}>Update Counter</button>
       <br />
-      <h3>Value of Counter is :   <nbsp/>{count}</h3>
+      <h3>Value of Counter is :   {count}</h3>
       <br/>
       <button onClick={()=>{
           var input = parseInt(prompt('enter the number which you want to increment','2'));
